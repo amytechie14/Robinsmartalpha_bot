@@ -1,5 +1,5 @@
 {
-  "name": "RobinsmartAlpha_bot",
+  "name": "robinsmartalpha_bot",
   "version": "1.0.0",
   "description": "Simple Telegram bot that reports real, live token data for Robinhood Chain (chain ID 4663)",
   "main": "index.js",
