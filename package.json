@@ -1,0 +1,17 @@
+{
+  "name": "rho-alpha-lite-bot",
+  "version": "1.0.0",
+  "description": "Simple Telegram bot that reports real, live token data for Robinhood Chain (chain ID 4663)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "*",
+    "dotenv": "*",
+    "node-telegram-bot-api": "*"
+  }
+}
