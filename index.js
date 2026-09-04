@@ -1,5 +1,6 @@
 require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBotLib = require('node-telegram-bot-api');
+const TelegramBot = TelegramBotLib.default || TelegramBotLib;
 const axios = require('axios');
 
 // ---------- Setup ----------
@@ -131,7 +132,7 @@ async function fetchPoolsList(endpoint) {
 bot.onText(/^\/start\b/, (msg) => {
   safeSend(
     msg.chat.id,
-    "Welcome to RobinsmartAlpha\n\n" +
+    " Welcome to RobinsmartAlpha\n\n" +
       "I look up live, real on-chain data for tokens on Robinhood Chain (chain ID 4663) — price, liquidity, volume, and basic contract info — sourced from GeckoTerminal and Blockscout.\n\n" +
       "Commands:\n" +
       "/analyze <token address> — full data for one token\n" +
